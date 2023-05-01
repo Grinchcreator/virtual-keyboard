@@ -96,12 +96,12 @@ let btn_equal = document.createElement("button");
   keyboard__keys1.appendChild(btn_equal);
 
 let btn_backspace = document.createElement("button");
-  btn_backspace.className = "keyboard__key";
+  btn_backspace.className = "keyboard__key__2";
   btn_backspace.innerHTML = "Backspace";
   keyboard__keys1.appendChild(btn_backspace);
 
 let btn_tab = document.createElement("button");
-  btn_tab.className = "keyboard__key";
+  btn_tab.className = "keyboard__key__2";
   btn_tab.innerHTML = "Tab";
   keyboard__keys2.appendChild(btn_tab);
 
@@ -166,12 +166,12 @@ let btn_bracket_right = document.createElement("button");
   keyboard__keys2.appendChild(btn_bracket_right);
 
 let btn_del = document.createElement("button");
-  btn_del.className = "keyboard__key";
+  btn_del.className = "keyboard__key__2";
   btn_del.innerHTML = "DEL";
   keyboard__keys2.appendChild(btn_del);
 
 let btn_caps = document.createElement("button");
-  btn_caps.className = "keyboard__key";
+  btn_caps.className = "keyboard__key__2";
   btn_caps.innerHTML = "Caps";
   keyboard__keys3.appendChild(btn_caps);
 
@@ -231,12 +231,12 @@ let btn_quotes = document.createElement("button");
   keyboard__keys3.appendChild(btn_quotes);
 
 let btn_enter = document.createElement("button");
-  btn_enter.className = "keyboard__key";
+  btn_enter.className = "keyboard__key__2";
   btn_enter.innerHTML = "ENTER";
   keyboard__keys3.appendChild(btn_enter);
 
 let btn_shift = document.createElement("button");
-  btn_shift.className = "keyboard__key";
+  btn_shift.className = "keyboard__key__2";
   btn_shift.innerHTML = "Shift";
   keyboard__keys4.appendChild(btn_shift);
 
@@ -291,37 +291,37 @@ let btn_slash = document.createElement("button");
   keyboard__keys4.appendChild(btn_slash);
 
 let btn_shift2 = document.createElement("button");
-  btn_shift2.className = "keyboard__key";
+  btn_shift2.className = "keyboard__key__2";
   btn_shift2.innerHTML = "Shift";
   keyboard__keys4.appendChild(btn_shift2);
 
 let btn_ctrl = document.createElement("button");
-  btn_ctrl.className = "keyboard__key";
+  btn_ctrl.className = "keyboard__key__2";
   btn_ctrl.innerHTML = "Ctrl";
   keyboard__keys5.appendChild(btn_ctrl);
 
 let btn_win = document.createElement("button");
-  btn_win.className = "keyboard__key";
+  btn_win.className = "keyboard__key__2";
   btn_win.innerHTML = "Win";
   keyboard__keys5.appendChild(btn_win);
 
 let btn_alt = document.createElement("button");
-  btn_alt.className = "keyboard__key";
+  btn_alt.className = "keyboard__key__2";
   btn_alt.innerHTML = "Alt";
   keyboard__keys5.appendChild(btn_alt);
 
 let btn_space = document.createElement("button");
-  btn_space.className = "keyboard__key";
+  btn_space.className = "keyboard__key__2";
   btn_space.innerHTML = "";
   keyboard__keys5.appendChild(btn_space);
 
 let btn_alt2 = document.createElement("button");
-  btn_alt2.className = "keyboard__key";
+  btn_alt2.className = "keyboard__key__2";
   btn_alt2.innerHTML = "Alt";
   keyboard__keys5.appendChild(btn_alt2);
 
 let btn_ctrl2 = document.createElement("button");
-  btn_ctrl2.className = "keyboard__key";
+  btn_ctrl2.className = "keyboard__key__2";
   btn_ctrl2.innerHTML = "Ctrl";
   keyboard__keys5.appendChild(btn_ctrl2);
 
@@ -333,21 +333,23 @@ textarea.onclick = function clear () {
   textarea.value = "";
 }
 
-
-
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".keyboard__key");
   buttons.forEach(btn=>{
     btn.addEventListener('click', () => {
       textarea.value += btn.innerText;
     })
 });
 
+
 btn_caps.onclick = function capitalize () {
-    let letters = [
-        btn_q, btn_w, btn_e, btn_r, btn_t, btn_y, btn_u, btn_i, btn_o, btn_p,
-        btn_a, btn_s, btn_d, btn_f, btn_g, btn_h, btn_j, btn_k, btn_l,
-        btn_z, btn_x, btn_c, btn_v, btn_b, btn_n, btn_m
-        ]  
-    letters.map( letter => letter.toUpperCase());
+    btn_q.innerText = "Q"; btn_w.innerText = "W"; btn_e.innerText = "E";
+    btn_r.innerText = "R"; btn_t.innerText = "T"; btn_y.innerText = "Y"; 
+    btn_u.innerText = "U"; btn_i.innerText = "I"; btn_o.innerText = "O"; 
+    btn_p.innerText = "P"; btn_a.innerText = "A"; btn_s.innerText = "S"; 
+    btn_d.innerText = "D"; btn_f.innerText = "F"; btn_g.innerText = "G"; 
+    btn_h.innerText = "H"; btn_j.innerText = "J"; btn_k.innerText = "K"; 
+    btn_l.innerText = "L"; btn_z.innerText = "Z"; btn_x.innerText = "X"; 
+    btn_c.innerText = "C"; btn_v.innerText = "V"; btn_b.innerText = "B";
+    btn_n.innerText = "N"; btn_m.innerText = "M";
 }
 
