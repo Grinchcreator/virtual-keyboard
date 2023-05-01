@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5bd;
+}
+
+.textarea {
+  width: 40vw;
+  height: 20vh;
+  border-radius: 7px;
+  resize: none;
+  background: #ebeff1;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.keyboard {
+  position: fixed;
+  bottom: 0;
+  width: 80vw;
+  height: 40vh;
+  background: #547994;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  user-select: none;
+  transition: bottom 0.5s;
+}
+
+.keyboard__keys1 {
+  display: grid;
+  grid-template-columns: repeat(14, 80px);
+  gap: 3px;
+  justify-content: center;
+  text-align: center;
+}
+
+.keyboard__keys2 {
+  display: grid;
+  grid-template-columns: repeat(14, 80px);
+  gap: 3px;
+  justify-content: center;
+}
+.keyboard__keys3 {
+  display: grid;
+  grid-template-columns: repeat(13, 80px);
+  gap: 3px;
+  justify-content: center;
+}
+
+.keyboard__keys4 {
+  display: grid;
+  grid-template-columns: repeat(12, 80px);
+  gap: 3px;
+  justify-content: center;
+}
+.keyboard__keys5 {
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  gap: 3px;
+  justify-content: center;
+}
+
+.keyboard__key {
+  height: 45px;
+  width: 80px;
+  margin: 3px;
+  border-radius: 4px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.1rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+}
+
+.keyboard__key:active {
+  background: rgba(255, 255, 255, 0.12);
+}
