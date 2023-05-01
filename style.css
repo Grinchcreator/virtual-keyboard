@@ -19,8 +19,8 @@ body {
 .keyboard {
   position: fixed;
   bottom: 0;
-  width: 70vw;
-  height: 35vh;
+  width: 80vw;
+  height: 40vh;
   background: #547994;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   border-radius: 7px;
@@ -28,17 +28,43 @@ body {
   transition: bottom 0.5s;
 }
 
-.keyboard__keys {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.keyboard__keys1 {
+  display: grid;
+  grid-template-columns: repeat(14, 80px);
+  gap: 3px;
   justify-content: center;
   text-align: center;
 }
 
+.keyboard__keys2 {
+  display: grid;
+  grid-template-columns: repeat(14, 80px);
+  gap: 3px;
+  justify-content: center;
+}
+.keyboard__keys3 {
+  display: grid;
+  grid-template-columns: repeat(13, 80px);
+  gap: 3px;
+  justify-content: center;
+}
+
+.keyboard__keys4 {
+  display: grid;
+  grid-template-columns: repeat(12, 80px);
+  gap: 3px;
+  justify-content: center;
+}
+.keyboard__keys5 {
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  gap: 3px;
+  justify-content: center;
+}
+
 .keyboard__key {
   height: 45px;
-  width: 90px;
+  width: 80px;
   margin: 3px;
   border-radius: 4px;
   border: none;
