@@ -8,7 +8,7 @@ body {
 
 .textarea {
   width: 40vw;
-  height: 20vh;
+  height: 25vh;
   border-radius: 7px;
   resize: none;
   background: #ebeff1;
@@ -59,10 +59,12 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 80px);
   gap: 3px;
-  justify-content: center;
+  justify-content: center
 }
 
-.keyboard__key {
+.keyboard__key,
+.keyboard__key__2,
+.keyboard__key__3 {
   height: 45px;
   width: 80px;
   margin: 3px;
@@ -80,6 +82,8 @@ body {
   padding: 0;
 }
 
-.keyboard__key:active {
+.keyboard__key:active,
+.keyboard__key__2:active,
+.keyboard__key__3:active {
   background: rgba(255, 255, 255, 0.12);
 }
