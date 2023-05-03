@@ -4,11 +4,10 @@
   https://github.com/rolling-scopes-school/tasks/blob/master/tasks/virtual-keyboard/virtual-keyboard-en.md
   
 2. App screenshot:
- 
-   ![image](https://user-images.githubusercontent.com/119819551/235529903-5cf13185-d7e7-4362-ae81-90d6c9069724.png)
+
+ ![image](https://user-images.githubusercontent.com/119819551/235909631-f7894ddb-224d-44a2-b5e6-78941482756c.png)
    
-3. Deploy:  
+3. Deploy:   https://grinchcreator.github.io/virtual-keyboard/
    
 4. Done / (deadline 02.05.23)
  
-5. Score: /
